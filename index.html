@@ -9,26 +9,28 @@
 <body>
     <div class="container">
         <header>
-            <h1>HarvestGuard: Revenue Prediction Model</h1>
+            <h1>HarvestGuard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Overview" class="nav-link active">Overview</a></li>
+                    <li><a href="#Problem" class="nav-link">Problem Statement</a></li>
+                    <li><a href="#Features" class="nav-link">Features</a></li>
+                    <li><a href="#Customers" class="nav-link">Target Customers</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav class="tab-menu">
-            <button class="tab-link" onclick="openTab(event, 'Overview')">Overview</button>
-            <button class="tab-link" onclick="openTab(event, 'Problem')">Problem Statement</button>
-            <button class="tab-link" onclick="openTab(event, 'Features')">Features</button>
-            <button class="tab-link" onclick="openTab(event, 'Customers')">Target Customers</button>
-        </nav>
 
-        <div id="Overview" class="tab-content">
+        <section id="Overview" class="content-section">
             <h2>Overview</h2>
             <p>HarvestGuard helps agricultural producers forecast price fluctuations and efficiently plan their production.</p>
-        </div>
+        </section>
 
-        <div id="Problem" class="tab-content">
+        <section id="Problem" class="content-section">
             <h2>Problem Statement</h2>
             <p>Agricultural producers face challenges in adjusting production volumes due to unstable market conditions.</p>
-        </div>
+        </section>
 
-        <div id="Features" class="tab-content">
+        <section id="Features" class="content-section">
             <h2>Features</h2>
             <ul>
                 <li>Price Prediction</li>
@@ -36,18 +38,35 @@
                 <li>Market Adaptation</li>
                 <li>Cost Reduction</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="Customers" class="tab-content">
+        <section id="Customers" class="content-section">
             <h2>Target Customers</h2>
             <ul>
                 <li>Small-scale Farms</li>
                 <li>Agricultural Distributors</li>
                 <li>Government and Corporate Support Agencies</li>
             </ul>
-        </div>
+        </section>
+
+        <footer>
+            <p>© 2024 HarvestGuard. All rights reserved.</p>
+        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript for smooth scrolling and section highlighting
+        document.querySelectorAll('a.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.active').classList.remove('active');
+                this.classList.add('active');
+                window.scrollTo({
+                    top: document.querySelector(this.getAttribute('href')).offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
