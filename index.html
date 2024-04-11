@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvestGuard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HarvestGuard: Revenue Prediction Model</h1>
+        </header>
+        <nav class="tab-menu">
+            <button class="tab-link" onclick="openTab(event, 'Overview')">Overview</button>
+            <button class="tab-link" onclick="openTab(event, 'Problem')">Problem Statement</button>
+            <button class="tab-link" onclick="openTab(event, 'Features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'Customers')">Target Customers</button>
+        </nav>
+
+        <div id="Overview" class="tab-content">
+            <h2>Overview</h2>
+            <p>HarvestGuard helps agricultural producers forecast price fluctuations and efficiently plan their production.</p>
+        </div>
+
+        <div id="Problem" class="tab-content">
+            <h2>Problem Statement</h2>
+            <p>Agricultural producers face challenges in adjusting production volumes due to unstable market conditions.</p>
+        </div>
+
+        <div id="Features" class="tab-content">
+            <h2>Features</h2>
+            <ul>
+                <li>Price Prediction</li>
+                <li>Resource Management</li>
+                <li>Market Adaptation</li>
+                <li>Cost Reduction</li>
+            </ul>
+        </div>
+
+        <div id="Customers" class="tab-content">
+            <h2>Target Customers</h2>
+            <ul>
+                <li>Small-scale Farms</li>
+                <li>Agricultural Distributors</li>
+                <li>Government and Corporate Support Agencies</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

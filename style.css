@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFAF0; /* Ivory background */
+    color: #8B4513; /* Saddle Brown text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #D2691E; /* Chocolate color */
+}
+
+.tab-menu {
+    overflow: hidden;
+    border: 1px solid #D2691E;
+    background-color: #FFE4B5; /* Moccasin */
+}
+
+.tab-link {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #8B4513;
+}
+
+.tab-link:hover {
+    background-color: #F4A460; /* Sandy Brown */
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #D2691E;
+    border-top: none;
+}
+
+.tab-content h2 {
+    color: #A0522D; /* Sienna */
+}

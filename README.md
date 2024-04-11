@@ -39,7 +39,7 @@ We welcome contributions from the community. Please refer to the `CONTRIBUTING.m
 This project is licensed under the MIT License - see the `LICENSE.md` file for details.
 
 ## Authors
-- **Your Name** - *Initial work* - [YourGithubProfile](https://github.com/YourUsername)
+- **pdack2001 - [padack2001](https://github.com/KMU-Global-2024-Summer/hg-landing-page)
 
 ## Acknowledgments
 - Hat tip to anyone whose code was used
