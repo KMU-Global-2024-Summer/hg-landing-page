@@ -1,51 +1,64 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFFAF0; /* Ivory background */
-    color: #8B4513; /* Saddle Brown text */
     margin: 0;
     padding: 0;
+    background-color: #fff5ee; /* Seashell background */
+    color: #8b4513; /* Saddle Brown text */
 }
 
 .container {
-    max-width: 800px;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px;
+}
+
+header {
+    background-color: #ffe4b5; /* Moccasin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     text-align: center;
-    color: #D2691E; /* Chocolate color */
+    color: #d2691e; /* Chocolate color */
 }
 
-.tab-menu {
-    overflow: hidden;
-    border: 1px solid #D2691E;
-    background-color: #FFE4B5; /* Moccasin */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-.tab-link {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    color: #8B4513;
+nav ul li {
+    margin: 0 15px;
 }
 
-.tab-link:hover {
-    background-color: #F4A460; /* Sandy Brown */
+.nav-link {
+    text-decoration: none;
+    color: #8b4513;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.tab-content {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #D2691E;
-    border-top: none;
+.nav-link:hover,
+.nav-link.active {
+    color: #d2691e;
 }
 
-.tab-content h2 {
-    color: #A0522D; /* Sienna */
+.content-section {
+    padding: 150px 20px 50px;
+    min-height: 100vh;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe4b5;
+    color: #8b4513;
 }
