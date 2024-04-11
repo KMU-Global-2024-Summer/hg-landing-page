@@ -1,9 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5ee; /* Seashell background */
-    color: #8b4513; /* Saddle Brown text */
+    background-color: #fff;
+    color: #333;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #ffe4b5; /* Moccasin */
+    background-color: #f8f8f7;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
     position: fixed;
@@ -24,7 +24,7 @@ header {
 
 header h1 {
     text-align: center;
-    color: #d2691e; /* Chocolate color */
+    color: #333;
 }
 
 nav ul {
@@ -35,30 +35,36 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #8b4513;
+    color: #333;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #d2691e;
+    color: #007aff; /* Apple blue link color */
 }
 
 .content-section {
     padding: 150px 20px 50px;
     min-height: 100vh;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.responsive-image {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Adds some space above the image */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffe4b5;
-    color: #8b4513;
+    background-color: #f8f8f7;
+    color: #333;
 }
