@@ -47,7 +47,8 @@ nav ul li {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #007aff; /* Apple blue link color */
+    color: #007aff; /* Example: blue color for the active link */
+    font-weight: bold;
 }
 
 .content-section {
